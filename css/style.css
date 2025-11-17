@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,11 +21,18 @@ nav {
     display: flex;
     flex-direction: row;
     flex: 0;
+    box-sizing: border-box;
 }
 
 nav a {
     flex: 1;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 a:hover, a.active {
@@ -30,8 +41,7 @@ a:hover, a.active {
 
 a.link {
     color: orange;
-    text-decoration: none;
-    font-weight: bold;
+    
 }
 
 h1 {
@@ -46,6 +56,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 main p {
